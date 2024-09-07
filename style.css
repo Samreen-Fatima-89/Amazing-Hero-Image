@@ -1,0 +1,126 @@
+* {
+  font-family: Montserrat !important;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #171717;
+  color: white;
+  height: 50px;
+  padding: 20px;
+}
+
+.left-div {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  margin-bottom: 0px;
+}
+
+li {
+  cursor: pointer;
+}
+
+.hero {
+  position: relative !important;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-img {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img > img {
+  width: 100%;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.image-text > h2 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.learn-btn {
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.hero-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.sub-btn {
+  background-color: white;
+  border: none;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 2px solid white;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.image-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 650px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+
+  .image-text > h2 {
+    font-size: 20px;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+  }
+
+  ul {
+    padding-left: 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
